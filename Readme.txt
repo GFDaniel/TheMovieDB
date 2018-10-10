@@ -1,14 +1,17 @@
 La aplicación consume datos de la datos de la pagina www.themoviedb.org
-Se consumen datos de las categorias Peliculas y Series, de estas categorías se usan obtienen datos como:
+Se consumen datos de las categorias Peliculas y Series, de 
+s categorías se usan obtienen datos como:
 	- Título o nombre de la película/serie
 	- Fecha de lanzamiento de la película/serie
 	- Puntuación de la película/serie
 	- Descripción de la película/serie
 	- Imagen de la película/serie
 
-Para obtener estos datos se realizó una clase llamada ApiClient, que consume el API de la pagina www.themoviedb.org . en esta clase se tiene el api_key ya definida para después usar la clase ApiClient en la clase InterfaceApi.
+Para obtener 
 
-Se creó la clase InterfaceApi, de tipo interfaz, en la cual se tienen definidos los métodos con los cuales se obtienen los datos ya sean de las películas o series y los tipos de contenido (películas/series populares, mejor valoradas, y próximas) por medio del método GET. Cuando se llaman los métodos, de está clase, retornan un dato de tipo “Movie” (película) o “TV” (serie).
+os datos se realizó una clase llamada ApiClient, que consume el API de la pagina www.themoviedb.org . en esta clase se tiene el api_key ya definida para después usar la clase ApiClient en la clase InterfaceApi.
+
+Se creó la clase InterfaceApi, de tipo interfaz, en la cual se tienen definidos los métodos con los cuales se obtienen los datos ya sean de las películas o series y los tipos de contenido (películas/series populares, mejor valoradas, y próximas) por medio del método GET. Cuando se llaman los métodos, de esta clase, retornan un dato de tipo “Movie” (película) o “TV” (serie).
 
 Para las dos categorías se tienen los dos activities, una llamada MainActivity (activity correspondiente a la categoria Peliculas) y otra activity llamada TvActivity (activity correspondiente a la categoría Series). En estas activities se usan las clases ApiClient y Interface api para obtener los datos del Api de la pagina  www.themoviedb.org . Los datos que se obtienen son de tipo “Movie” o “TV”.
 
@@ -31,3 +34,12 @@ En la capa de Negocio se tienen las clases “MovieAdapter” y “TvAdapter” 
 
 Datos
 En la capa de datos se tienen las clases ApiClient y Interface api, encargadas de obtener los datos necesarios.
+
+
+__________________________________________________________________________________________________________________
+
+El principio de responsabilidad dice clase debe tener responsabilidad sobre una sola parte de la funcionalidad de todo el software y esta responsabilidad debe estar encapsulada en su totalidad por la clase.
+Esto se usa para que cuando se esté desarrollando un software, el manejo de errores y encontrarlos sea más fácil y eficiente porque de esta manera se sabe más rápido que parte el software tiene el error: también es útil para hacer mejoras al software, ya que permite hacerlo por partes.
+
+Un buen código es cuando se siguen unas reglas establecidas por el grupo de trabajo y cuando se comenta cada parte del código. También cuando este esta dividido en varias funcionalidades, así se puede aplicar el dicho de “divide y vencerás”. 
+
