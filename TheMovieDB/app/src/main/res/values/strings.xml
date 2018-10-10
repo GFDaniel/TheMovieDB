@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TheMovieDB</string>
+    <string name="Name_of_movie">Name of movie</string>
+    <string name="Description_of_movie">Description of movie</string>
+    <string name="Date_of_movie">Date of movie</string>
+    <string name="Rate_of_movie">Rate of movie</string>
+    <string name="Popular">Popular</string>
+    <string name="TopRated">Top</string>
+    <string name="Upcoming">Pronto</string>
+    <string name="Series">Series</string>
+    <string name="Peliculas">Peliculas</string>
+</resources>
